@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free retirement calculator with 401k projections, Social Security, pension, taxes, and Medicare costs. Plan your retirement with confidence.">
-    <title>SmartRetire.Tools - Free Retirement Calculator</title>
+    <meta name="description" content="Free US retirement calculator with 401k, Traditional & Roth IRA, Social Security, pension, federal/state taxes, and Medicare costs. Comprehensive American retirement planning tool.">
+    <meta name="keywords" content="retirement calculator, 401k calculator, IRA calculator, Social Security calculator, US retirement planning, American retirement, pension calculator">
+    <title>SmartRetire.Tools - Free US Retirement Calculator</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartretire.tools">
+    <meta property="og:title" content="SmartRetire.Tools - Free US Retirement Calculator">
+    <meta property="og:description" content="Calculate your US retirement with 401k, IRA, Social Security, pension, taxes, and Medicare costs. Free comprehensive planning tool.">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SmartRetire.Tools - Free US Retirement Calculator">
+    <meta name="twitter:description" content="Plan your American retirement with confidence. Free comprehensive calculator.">
+    
     <style>
         * { 
             margin: 0; 
@@ -121,15 +137,16 @@
             margin-bottom: 15px;
         }
         
-        .footer-credit {
-            margin-bottom: 10px;
-            opacity: 0.9;
+        .footer-tagline {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            opacity: 0.95;
+            font-style: italic;
         }
         
-        .footer-tribute {
+        .footer-credit {
             margin-bottom: 25px;
             opacity: 0.9;
-            font-style: italic;
         }
         
         .footer-copyright {
@@ -153,7 +170,7 @@
             font-size: 0.95rem;
         }
         
-        .footer-tagline {
+        .footer-built {
             font-size: 0.75rem;
             margin-top: 25px;
             opacity: 0.7;
@@ -183,27 +200,30 @@
 <body>
     <!-- Hero Section -->
     <div class="hero">
-        <h1>🎯 Plan Your Retirement</h1>
-        <p>Free, powerful calculator to help you retire with confidence</p>
+        <h1>🎯 Plan Your US Retirement</h1>
+        <p>Free, comprehensive calculator for American retirement planning</p>
         <a href="https://retirement-calculator-kjmqodmukwewgviqfjvtzl.streamlit.app" class="btn" target="_blank">Try Free Calculator →</a>
     </div>
     
     <!-- Main Content -->
     <div class="container">
         <div class="calculator-card">
-            <h2>💰 Comprehensive Retirement Calculator</h2>
+            <h2>💰 Comprehensive US Retirement Calculator</h2>
             <p>
-                Calculate exactly how much you need to retire comfortably. 
-                Our advanced calculator includes all the essential components of retirement planning:
+                Calculate exactly how much you need to retire comfortably in the United States. 
+                Our advanced calculator includes all the essential components of US retirement planning:
             </p>
             <ul>
-                <li>✓ 401(k) projections with compound growth and annual contributions</li>
+                <li>✓ 401(k) & Traditional IRA projections with compound growth and contributions</li>
+                <li>✓ Roth IRA accounts with tax-free withdrawal planning</li>
+                <li>✓ Taxable investment accounts (brokerage, stocks, bonds)</li>
                 <li>✓ Social Security benefits optimized by claiming age (62, 65, 67, 70)</li>
                 <li>✓ Pension calculations with early retirement adjustments</li>
                 <li>✓ Federal and state tax estimates with standard deductions</li>
                 <li>✓ Medicare & healthcare costs including IRMAA surcharges</li>
                 <li>✓ Required Minimum Distributions (RMDs) starting at age 73</li>
                 <li>✓ Automatic inflation adjustments for all income sources</li>
+                <li>✓ Total assets display across all retirement accounts</li>
                 <li>✓ Year-by-year amortization schedule until life expectancy</li>
                 <li>✓ Compare multiple retirement age scenarios side-by-side</li>
             </ul>
@@ -215,8 +235,9 @@
     <footer>
         <div class="footer-content">
             <p class="footer-brand"><strong>SmartRetire.Tools</strong></p>
-            <p class="footer-credit">Created by JV</p>
-            <p class="footer-tribute">Clarity Over Complexity</p>
+            <p class="footer-tagline">Clarity Over Complexity</p>
+            
+            <p class="footer-credit">Founded by Joy Victor in memory of Deiva Victor</p>
             
             <p class="footer-copyright">
                 © 2025 SmartRetire.Tools | All Rights Reserved
@@ -225,20 +246,49 @@
             <div class="footer-disclaimer">
                 <strong>⚠️ Important Disclaimer</strong>
                 <p>
-                    These calculators are for educational and informational purposes only. 
-                    They do not constitute financial, investment, tax, or legal advice. 
-                    Results are estimates based on the information you provide and actual 
-                    outcomes may vary significantly based on market performance, tax law changes, 
-                    and personal circumstances. Please consult with a qualified financial advisor, 
-                    tax professional, or attorney for personalized guidance tailored to your 
-                    specific situation.
+                    This calculator is designed for US retirement planning and provides estimates for 
+                    educational and informational purposes only. It does not constitute financial, 
+                    investment, tax, or legal advice. Results are estimates based on the information 
+                    you provide and actual outcomes may vary significantly based on market performance, 
+                    tax law changes, and personal circumstances. US tax laws, Social Security rules, 
+                    Medicare costs, and retirement account regulations are subject to change. Please 
+                    consult with a qualified financial advisor, tax professional, or attorney for 
+                    personalized guidance tailored to your specific situation.
                 </p>
             </div>
             
-            <p class="footer-tagline">
+            <p class="footer-built">
                 Built with ❤️ | Powered by AI and Data Science
             </p>
         </div>
     </footer>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "SmartRetire.Tools - US Retirement Calculator",
+      "description": "Free US retirement calculator with 401k, IRA, Social Security, pension, and tax projections",
+      "url": "https://smartretire.tools",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "401(k) projections",
+        "Traditional & Roth IRA calculations",
+        "Social Security optimization",
+        "Pension calculations",
+        "Federal and state tax estimates",
+        "Medicare cost planning",
+        "RMD calculations",
+        "Inflation adjustments"
+      ]
+    }
+    </script>
 </body>
 </html>
